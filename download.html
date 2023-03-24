@@ -12,8 +12,9 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Seotech</title>
+  <title>Tic Tac Toe</title>
 
+  <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/essenstial-ultimate-ui/64/tic_tac_toe-512.png">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
@@ -26,6 +27,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- icon libary -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="sub_page">
@@ -37,7 +40,8 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Seotech
+              <img src="https://cdn3.iconfinder.com/data/icons/essenstial-ultimate-ui/64/tic_tac_toe-512.png" alt="" style="height: 5rem;">
+              Tic Tac Toe
             </span>
           </a>
           </a>
@@ -57,7 +61,7 @@
                   <a class="nav-link" href="about.html"> About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="service.html"> Services </a>
+                  <a class="nav-link" href="download.html"> Download </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contactLink">Contact Us</a>
@@ -65,15 +69,12 @@
               </ul>
             </div>
             <div class="quote_btn-container ">
-              <a href="">
+              <a href="tel:+84373894182">
                 <img src="images/call.png" alt="">
                 <span>
-                  Call : + 01 1234567890
+                  Call : + 84 373894182
                 </span>
               </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
           </div>
         </nav>
@@ -83,14 +84,14 @@
   </div>
 
   <!-- service section -->
-  <section class="service_section layout_padding">
+  <section class="service_section layout_padding" style="padding-bottom: 0;">
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          Our Services
+          Our Features
         </h2>
         <p>
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Socket-based client-server Tic Tac Toe game in Python developed using TkInter GUI toolkit.
         </p>
       </div>
 
@@ -101,10 +102,10 @@
           </div>
           <div class="detail-box">
             <h5>
-              Brand Promotion
+              Classic Tic-Tac-Toe
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              Game for two players, called "X" and "O"
             </p>
           </div>
         </div>
@@ -114,11 +115,10 @@
           </div>
           <div class="detail-box">
             <h5>
-              Video Marketing
-
+              Two Players Compete
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              Player take turns marking the spaces in a 3×3
             </p>
           </div>
         </div>
@@ -128,10 +128,10 @@
           </div>
           <div class="detail-box">
             <h5>
-              Site Analysis
+              Server & Client Architecture
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              Hosts and manages the resources that the client requests
             </p>
           </div>
         </div>
@@ -141,10 +141,10 @@
           </div>
           <div class="detail-box">
             <h5>
-              Social Media Marketing
+              Socket Data Transfer
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             The application program can send and receive data
             </p>
           </div>
         </div>
@@ -154,17 +154,18 @@
           </div>
           <div class="detail-box">
             <h5>
-              SEO Optimization
+              UI Optimization
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              Focuses on the elements that use to navigate and glean information
             </p>
           </div>
         </div>
       </div>
       <div class="btn-box">
         <a href="">
-          Read More
+          <i class="fa fa-download"></i>
+          Download
         </a>
       </div>
     </div>
@@ -174,10 +175,10 @@
   <div class="footer_bg">
 
     <!-- contact section -->
-    <section class="contact_section layout_padding" id="contactLink">
+    <section class="contact_section" id="contactLink">
       <div class="container">
         <div class="heading_container">
-          <h2>
+          <h2 class="text-white">
             Get In touch
           </h2>
         </div>
@@ -221,31 +222,30 @@
     <section class="info_section layout_padding2">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="info_logo">
               <h3>
-                Seotech
+                Tic-Tac-Toe The Game
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor indidunt ut labore et
-                dolore magna
+                Socket-based client-server Tic Tac Toe game in Python developed using TkInter GUI toolkit.
               </p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="info_links">
               <h4>
-                BASIC LINKS
+                NAVIGATION LINKS
               </h4>
               <ul class="  ">
-                <li class=" ">
+                <li class=" active">
                   <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="">
                   <a class="" href="about.html"> About</a>
                 </li>
-                <li class="active">
-                  <a class="" href="service.html"> Services </a>
+                <li class="">
+                  <a class="" href="download.html"> Download </a>
                 </li>
                 <li class="">
                   <a class="" href="#contactLink">Contact Us</a>
@@ -253,7 +253,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="info_contact">
               <h4>
                 CONTACT DETAILS
@@ -266,43 +266,17 @@
                   +01 1234567890
                 </p>
               </a>
-              <a href="">
+              <a href="mail">
                 <div class="img-box">
                   <img src="images/envelope-white.png" width="18px" alt="">
                 </div>
                 <p>
-                  demo@gmail.com
+                  trinhvinhphuc.contact@gmail.com
                 </p>
               </a>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="info_form ">
-              <h4>
-                NEWSLETTER
-              </h4>
-              <form action="">
-                <input type="email" placeholder="Enter your email">
-                <button>
-                  Subscribe
-                </button>
-              </form>
-              <div class="social_box">
-                <a href="">
-                  <img src="images/info-fb.png" alt="">
-                </a>
-                <a href="">
-                  <img src="images/info-twitter.png" alt="">
-                </a>
-                <a href="">
-                  <img src="images/info-linkedin.png" alt="">
-                </a>
-                <a href="">
-                  <img src="images/info-youtube.png" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -314,8 +288,7 @@
     <section class="container-fluid footer_section">
       <div class="container">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          Developed by Trinh Vinh Phuc with 💖
         </p>
       </div>
     </section>

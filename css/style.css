@@ -354,6 +354,25 @@ a:focus {
   width: 100%;
 }
 
+.about_section .img-box img {
+  height: 20em;
+  margin: 50px 0 50px 0;
+}
+
+.about_section .img-box::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 13%;
+  left: 67%;
+  width: 60%;
+  height: 75%;
+  border-radius: 25px;
+  -webkit-transform: translateX(-52.5%) rotate(347deg);
+          transform: translateX(-52.5%) rotate(347deg);
+  background-color: #041858;
+}
+
 .about_section .detail-box p {
   margin-top: 25px;
 }
