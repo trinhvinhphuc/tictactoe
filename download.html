@@ -110,8 +110,8 @@
           </div>
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-2.png" alt="">
+          <div class="img-box bg-secondary">
+            <img src="images/2player.png" alt="" class="w-100">
           </div>
           <div class="detail-box">
             <h5>
@@ -123,8 +123,8 @@
           </div>
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-3.png" alt="">
+          <div class="img-box bg-secondary">
+            <img src="images/server-client.png" alt="" class="w-75">
           </div>
           <div class="detail-box">
             <h5>
@@ -136,8 +136,8 @@
           </div>
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-4.png" alt="">
+          <div class="img-box bg-secondary">
+            <img src="images/socket.png" alt="" class="w-75">
           </div>
           <div class="detail-box">
             <h5>
@@ -149,8 +149,8 @@
           </div>
         </div>
         <div class="box">
-          <div class="img-box">
-            <img src="images/s-5.png" alt="">
+          <div class="img-box bg-secondary">
+            <img src="images/player1.png" alt="" class="w-75">
           </div>
           <div class="detail-box">
             <h5>
@@ -162,8 +162,57 @@
           </div>
         </div>
       </div>
+      <div class="container text-left">
+        <div class="row">
+          <div class="col-md-12 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+              Tic Tac Toe Game
+            </h3>
+            <div class="blog-post">
+              <h2 class="blog-post-title">Running the Game</h2>
+              <p>This is a simple Tic Tac Toe game written in Python. It allows two players to play against each other on the same machine using a GUI. The game also includes a client-server architecture, allowing two players to play remotely over a network.</p>
+              <hr>
+              <p>
+                To run the game, follow these steps:
+              </p>
+              <ol>
+                <li class="my-2">Clone or download <a href="https://github.com/trinhvinhphuc/Tictactoe3x3" class="badge badge-success">this repository</a> to your local machine.</li>
+                <li class="my-2">Open the command prompt or terminal and navigate to the project directory.
+                  <div class="w-100 d-flex justify-content-center">
+                    <img src="images/directory.jpg" alt="Navigate to the project directory" class="w-75 rounded">
+                  </div>                  
+                </li>
+                <li class="my-2">To start the server, run the following command:</li>
+                <div class="bg-secondary p-2 rounded">
+                  <sam>python tictactoe_server.py</samp>
+                </div>
+                <li class="my-2">The server will automatically get the IP address of the machine and display it on the console.
+                  <div class="w-100 d-flex justify-content-center">
+                    <img src="images/run_server.jpg" alt="Navigate to the project directory" class="w-50 rounded">
+                  </div>
+                </li>
+                <li class="my-2">To start the client, run the following command:</li>
+                <div class="bg-secondary p-2 rounded">
+                  <sam>python tictactoe_client.py [server_ipv4_address] [server_port_number]</samp>
+                </div>
+                <li class="my-2">Replace [server_ipv4_address] with the IP address of the server you want to connect to and [server_port_number] with the port number of the server (which is always 1234).
+                  <div class="w-100 d-flex justify-content-center">
+                    <img src="images/run_client.jpg" alt="Navigate to the project directory" class="w-50 rounded">
+                  </div>
+                </li>
+                <li class="my-2">The game will start and you can begin playing against your opponent.
+                  <div class="w-100 d-flex justify-content-center">
+                    <img src="images/gui.jpg" alt="Navigate to the project directory" class="w-50 rounded">
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+      </div>
       <div class="btn-box">
-        <a href="">
+        <a href="https://github.com/trinhvinhphuc/Tictactoe3x3/archive/refs/heads/master.zip">
           <i class="fa fa-download"></i>
           Download
         </a>
@@ -205,14 +254,13 @@
                 <input type="text" class="form-control" id="inputMessage" placeholder="Message">
               </div>
               <div class="d-flex justify-content-center">
-                <button type="submit" class="">Send</button>
+                <button type="" class="" onclick="sendEmail()">Send</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- end contact section -->
 
@@ -296,6 +344,7 @@
 
   </div>
 
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>

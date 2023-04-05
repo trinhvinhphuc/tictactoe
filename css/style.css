@@ -903,6 +903,11 @@ a:focus {
   margin-right: 25px;
 }
 
+.social_box a {
+  padding: 0px !important;
+  background-color: #ffffff !important;
+}
+
 /* footer section*/
 .footer_section {
   display: -webkit-box;
