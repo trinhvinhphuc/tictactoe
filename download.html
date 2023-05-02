@@ -91,14 +91,14 @@
           Our Features
         </h2>
         <p>
-          Socket-based client-server Tic Tac Toe game in Python developed using TkInter GUI toolkit.
+          The game was written in Python and includes a graphical user interface (GUI), also supports remote gameplay over a network using socket-based architecture.
         </p>
       </div>
 
       <div class="service_container">
         <div class="box">
           <div class="img-box bg-secondary">
-            <img src="images/board.png" alt="" class="w-75">
+            <img src="images/board.png" alt="" class="w-100">
           </div>
           <div class="detail-box">
             <h5>
@@ -124,20 +124,20 @@
         </div>
         <div class="box">
           <div class="img-box bg-secondary">
-            <img src="images/server-client.png" alt="" class="w-75">
+            <img src="images/server-client.png" alt="" class="w-100">
           </div>
           <div class="detail-box">
             <h5>
-              Server & Client Architecture
+              Memorize the game state
             </h5>
             <p>
-              Hosts and manages the resources that the client requests
+              Count the number of wins and losses for each player
             </p>
           </div>
         </div>
         <div class="box">
           <div class="img-box bg-secondary">
-            <img src="images/socket.png" alt="" class="w-75">
+            <img src="images/socket.png" alt="" class="w-100">
           </div>
           <div class="detail-box">
             <h5>
@@ -150,7 +150,7 @@
         </div>
         <div class="box">
           <div class="img-box bg-secondary">
-            <img src="images/player1.png" alt="" class="w-75">
+            <img src="images/player1.png" alt="" class="w-100">
           </div>
           <div class="detail-box">
             <h5>
@@ -170,34 +170,39 @@
             </h3>
             <div class="blog-post">
               <h2 class="blog-post-title">Running the Game</h2>
-              <p>This is a simple Tic Tac Toe game written in Python. It allows two players to play against each other on the same machine using a GUI. The game also includes a client-server architecture, allowing two players to play remotely over a network.</p>
+              <p>Tic Tac Toe is a classic two-player game that challenges you to place your symbol in a 3x3 grid to achieve three in a row, either horizontally, vertically, or diagonally. This implementation of the game was written in Python and includes a graphical user interface (GUI) for easy gameplay. The game also supports remote gameplay over a network using socket-based architecture.</p>
               <hr>
               <p>
                 To run the game, follow these steps:
               </p>
               <ol>
-                <li class="my-2">Clone or download <a href="https://github.com/trinhvinhphuc/Tictactoe3x3" class="badge badge-success">this repository</a> to your local machine.</li>
+                <li class="my-2">Clone or download <a href="https://github.com/trinhvinhphuc/Tictactoe3x3" class="badge badge-success" target="_blank">this repository</a> to your local machine.</li>
                 <li class="my-2">Open the command prompt or terminal and navigate to the project directory.
                   <div class="w-100 d-flex justify-content-center">
-                    <img src="images/directory.jpg" alt="Navigate to the project directory" class="w-75 rounded">
+                    <img src="images/directory.jpg" alt="Navigate to the project directory" class="w-50 rounded">
                   </div>                  
                 </li>
-                <li class="my-2">To start the server, run the following command:</li>
+                <li class="my-2">To start Player 1, run the following command:</li>
                 <div class="bg-secondary p-2 rounded">
-                  <sam>python tictactoe_server.py</samp>
+                  <sam>python player1.py</samp>
                 </div>
-                <li class="my-2">The server will automatically get the IP address of the machine and display it on the console.
+                <li class="my-2">Player 1 will start and prompt you to enter the IP address and port number of Player 2.
                   <div class="w-100 d-flex justify-content-center">
                     <img src="images/run_server.jpg" alt="Navigate to the project directory" class="w-50 rounded">
                   </div>
                 </li>
-                <li class="my-2">To start the client, run the following command:</li>
+                <li class="my-2">To start Player 2, run the following command:</li>
                 <div class="bg-secondary p-2 rounded">
-                  <sam>python tictactoe_client.py [server_ipv4_address] [server_port_number]</samp>
+                  <sam>python player2.py</samp>
                 </div>
-                <li class="my-2">Replace <span class="badge badge-info">[server_ipv4_address]</span> with the IP address of the server you want to connect to and <span class="badge badge-info">[server_port_number]</span> with the port number of the server (which is always 1234).
+                <li class="my-2">Player 2 will display their IP address and port number on the console.
                   <div class="w-100 d-flex justify-content-center">
                     <img src="images/run_client.jpg" alt="Navigate to the project directory" class="w-50 rounded">
+                  </div>
+                </li>
+                <li class="my-2">Once Player 1 has entered the required information, both players will be prompted to enter their names.
+                  <div class="w-100 d-flex justify-content-center">
+                    <img src="images/getname.jpg" alt="Navigate to the project directory" class="w-50 rounded">
                   </div>
                 </li>
                 <li class="my-2">The game will start and you can begin playing against your opponent.
